@@ -1,0 +1,7 @@
+.list-group-item .done {
+  text-decoration: line-through;
+}
+
+.list-group-item .important {
+  font-weight: bold;
+}
