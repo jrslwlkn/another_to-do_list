@@ -1,14 +1,14 @@
 import React from 'react'
 
 const AddTodo = ({text, onchange, add}) => (
-  <div className="input-group mt-2">
+  <form className="input-group mt-2" onSubmit={() => add(text)}>
     <input type="text" className="form-control" placeholder="add a to-do" onChange={onchange} value={text} />
     <div className="input-group-append">
-      <button className="btn btn-info" type="button" onClick={() => add(text)}>
+      <button className="btn btn-info" type="button">
         Add
       </button>
     </div>
-  </div>
+  </form>
 );
 
 export default AddTodo;
