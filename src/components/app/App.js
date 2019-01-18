@@ -40,7 +40,8 @@ class App extends Component {
     localStorage.setItem('todos', JSON.stringify(updatedTodos))
   }
 
-  addTodo = text => {
+  addTodo = (e, text) => {
+    e.preventDefault()
     this.id++;
     if (text.trim()) {
       const { todos } = this.state;
